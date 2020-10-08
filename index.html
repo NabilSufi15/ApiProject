@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>API Calls</title>
+    <meta name="author" content="Nabil Sufi" />
+    <meta name="description" content="Making API Calls" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">API Name</th>
+            <th scope="col">API Description</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th scope="row">1. Postal Code Search</th>
+            <td>Reurns the name of the location for the given post code</td>
+            <td><button id="btnRun" class="btn btn-primary">Submit</button></td>
+          </tr>
+
+          <tr>
+            <th scope="row">2. Ocean / reverse geocoding</th>
+            <td>Returns the ocean or sea for the given latitude/longitude</td>
+            <td>
+              <button id="btnRun2" class="btn btn-primary">Submit</button>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">
+              3. Weather Station with most recent weather observation / reverse
+              geocoding
+            </th>
+            <td>
+              returns a weather station with the most recent weather observation
+            </td>
+            <td>
+              <button id="btnRun3" class="btn btn-primary">Submit</button>
+            </td>
+          </tr>
+
+          <thead>
+            <th scope="row" colspan="3">Results</th>
+          </thead>
+
+          <tr>
+            <td colspan="1" id="results"></td>
+            <td colspan="1" id="results2"></td>
+            <td colspan="1" id="results3"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="preloader"></div>
+
+    <script
+      type="application/javascript"
+      src="libs/js/jquery-3.5.1.min.js"
+    ></script>
+    <script type="application/javascript" src="libs/js/script.js"></script>
+  </body>
+</html>
